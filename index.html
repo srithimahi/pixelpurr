@@ -1,0 +1,63 @@
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PixelPurr Cafe</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <main class="wrap">
+        <section class="hero">
+            <h1>Welcome to PixelPurr Cafe</h1>
+            <p>Pet the cats, feed them, and get the FLOOF.</p>
+            <div class="heroRow">
+                <button id="petBtn">Pet the cuties. Dont be shy.</button>
+                <div id="petStatus" class="status">Mood: Neutral</div>
+                <div id = "mood" class ="status">Status: Awake</div>
+            </div>
+
+            <div id="bubble" class="bubble">hi hooman. i judge u.</div>
+
+            <div class="tasks">
+                <div class="tasksTitle">The Cat Tasks.</div>
+                <ul>
+                    <li id="t1">Pet the kitties 5 times</li>
+                    <li id="t2">Feed before hunger drops below 4</li>
+                    <li id="t3">Give water before thirst drops below 4</li>
+                    <li id="t4">Translate at least one message to meow</li>
+                </ul>
+            </div>
+        </section>
+        <div id="pawLayer" aria-hidden="true"></div>
+        <section id="care" class="panel">
+            <h2>Wanna play Cat Care?</h2>
+            <div class="bars">
+                <div class="row">
+                    <span>Hunger</span>
+                    <div class="bar"><div id="hungerFill" class="fill"></div></div>
+                    <span id="thristNum">10</span>
+                </div>
+            </div>
+
+            <div class="bowls">
+                <div class="bowl" id="foodBowl">Food Bowl</div>
+                <div class="bowl" id="waterBowl">Water Bowl</div>
+            </div>
+            <div class="small">Click on the bowls to refill the stats!</div>
+        </section>
+
+        <section id="cats" class="panel">
+            <h2>Meet the cuties</h2>
+            <div class="grid" id="catGrid"></div>
+        </section>
+
+        <section id="meow" class="panel">
+            <h2>Meow Translator</h2>
+            <textarea id="input" placeholder="Type a message..."></textarea>
+            <button id="translate">Translate to Meow!</button>
+            <pre id="output"></pre>
+        </section>
+
+        <footer class="footer">Made with some love and ofc cats.</footer>
+    </main>
+<script src="app.js"></script>
+</body>
